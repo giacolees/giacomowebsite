@@ -13,6 +13,7 @@ const AboutSection = styled.section`
   background: #FFFFFA;
   color: #121212;
   max-width: 100%;
+  
 `;
 
 const Title = styled(motion.h1)`
