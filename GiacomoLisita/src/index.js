@@ -5,6 +5,7 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import "typeface-source-code-pro";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

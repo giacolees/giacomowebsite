@@ -22,7 +22,7 @@ const TypingText = styled(motion.h1)`
   border-right: 0.1em solid #121212;
   white-space: nowrap;
   overflow: hidden;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: 900;
   max-width: 100%;
 `;
@@ -30,7 +30,7 @@ const TypingText = styled(motion.h1)`
 const Subtitle = styled(motion.p)`
   font-size: 2.0rem;
   color: #121212;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: 500;
   text-align: center;
   padding-bottom: 9rem;
@@ -82,7 +82,7 @@ const LearnMoreButton = styled(motion.a)`
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: regular;
 `;
 
@@ -94,7 +94,7 @@ const ExploreProjButt = styled(motion.a)`
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: regular;
 
   &:hover {
@@ -111,7 +111,7 @@ const Works = styled(motion.p)`
   flex-direction: column;
   font-size: 2.0rem;
   color: #121212;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: 500;
   text-align: center;
 `;
@@ -122,7 +122,7 @@ const NextProjectButton = styled(motion.button)`
   background: #B00020;
   cursor: pointer;
   border-radius: 10px;
-  font-family: 'Source+Code+Pro', Source Code Pro;
+  font-family: 'source-code-pro', source code pro;
   font-weight: bold;
   margin-top: 15rem;
   width: 10%;
