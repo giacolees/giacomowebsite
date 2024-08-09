@@ -81,7 +81,7 @@ const Header = () => {
             </NavItem>
             Works*/}
             <NavItem
-                href="/about"
+                href="/giacomowebsite/about"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => handleNavigation()}

@@ -52,7 +52,7 @@ const App = () => {
               <Footer />
             </>
             } />
-          <Route path='/About' element={
+          <Route path='/giacomowebsite/about' element={
             <>
               <AboutDiv>
                   <Header fixed = {false}/>
