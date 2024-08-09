@@ -93,7 +93,7 @@ const ExploreProjButt = styled(motion.a)`
   border-radius: 5px;
   text-decoration: none;
   font-weight: regular;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 
   &:hover {
     scale: 1.1;
@@ -107,10 +107,13 @@ const ExploreProjButt = styled(motion.a)`
 const Works = styled(motion.p)`
   display: flex;
   flex-direction: column;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   color: #121212;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 `;
 
 const NextProjectButton = styled(motion.button)`
@@ -133,34 +136,47 @@ const NextProjectButton = styled(motion.button)`
   }
 `;
 
+const desc = styled.p`
+  max-width: 3rem;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+`;
+
+const Page = styled.div`
+  height: 90%;
+`;
+
 const projects = [
   {
-    title: 'Fault Detection in Autonomous Vehicle Perception Systems through Deep Learning',
-    description: 'Master\'s Thesis',
+    title: 'Master\'s Thesis: Fault Detection in Autonomous Vehicle Perception Systems through Deep Learning',
+    description: 'This project focused on fault and anomaly detection in autonomous driving by processing raw data from LiDAR and camera sensors to generate and visualize depth maps. A curated dataset, combining open-source and proprietary data with injected faults, was used to benchmark traditional image processing methods and develop supervised deep learning models. These models were rigorously trained and tested, achieving high-performance metrics, including precision of 98.29%, recall of 97.47%, and an F1 score of 97.56%. Additionally, faulty images were generated using Image-To-Image Generative Deep Learning architectures like Pix2Pix.',
+    link: '',
   },
   {
     title: 'Multi‑Class Semantic Segmentation on Urban Driving Scenes',
-    description: 'Description of project 1',
+    description: 'This project showcases a deep learning approach to semantic segmentation using the U-Net architecture. The model was trained on the Cityscapes dataset, which contains high-resolution images of urban street scenes, annotated for various classes like roads, buildings, and vehicles. The project includes a custom mapping of dataset classes to optimize segmentation accuracy and visualization.',
+    link: 'https://github.com/giacolees/MulticlassSemanticSegmentation',
   },
   {
     title: 'Sensor Data Analysis and Trajectory Prediction Using Machine Learning',
-    description: 'Description of project 2',
+    description: 'This project provides a comprehensive analysis of trajectory data using time series methods. This analysis covers the entire process from data preprocessing and exploratory data analysis to feature extraction and predictive modeling.',
+    link: 'https://github.com/giacolees/TimeSeries_Trajectories_Analysis',
   },
   {
     title: 'Image Processing Pipeline using Embedded Software',
-    description: 'Description of project 3',
+    description: 'This project leverages FPGA-based hardware design to perform real-time image processing, focusing on color space conversion, pixel classification, noise reduction, and data compression. By converting images from RGB to HSV, the system enhances the accuracy of color-based processing. Pixel classification and filtering are used to refine detected regions, while run-length encoding optimizes data for efficient handling.',
+    link: 'https://github.com/giacolees/ImageFiltering',
   },
   {
-    title: 'Neural Network Accelerator on FPGA',
-    description: 'Description of project 1',
-  },
-  {
-    title: 'Redesign of iOS default Clock App',
-    description: 'Description of project 2',
+    title: 'Redesign of iOS default Clock App in Swift',
+    description: 'Contemporary clock app using SwiftUI, featuring a unique circular design where hours, minutes, and seconds are visually represented as rotating concentric rings. The app dynamically updates every 0.1 seconds to provide real-time accuracy, all while maintaining a minimalist and sleek user interface. Users can easily toggle the display of the seconds ring, offering a customizable experience that balances both functionality and aesthetics.',
+    link: 'https://github.com/giacolees/RedesignedClock',
   },
   {
     title: 'Portfolio Website Source Code',
     description: 'To view the source code of this website, click here',
+    link: 'https://github.com/giacolees/giacomowebsite',
   },
 ];
 
@@ -238,14 +254,15 @@ const Work = () => {
               viewport={{ once: true }}
             >
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <LearnMoreButton
-                href="/projects"
+              <desc>{project.description}</desc>
+              {index > 0 && (<LearnMoreButton
+                href={project.link}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Learn More
+                Check the project
               </LearnMoreButton>
+              )}
               {index < projects.length - 1 && (
                 <NextProjectButton
                   whileHover={{ scale: 1.05 }}

@@ -8,10 +8,11 @@ import { motion } from 'framer-motion';
 const FooterContainer = styled.footer`
     background: #FFFFFA;
     color: #121212;
-    padding: 2rem 1rem;
     bottom: 0;
     max-width: 100%;
-    max-height: 100%;
+    height: 8%;
+    margin-left: 2rem;
+    margin-right: 2rem;
     overflow-x: hidden;
     align-items: center;
 `;
@@ -120,7 +121,7 @@ const Footer = () => {
         <TopRow>
             <ButtonContainer id="button-section">
                 <DownloadButton
-                    href="/assets/Documents/GiacomoLisitaCV_CVE_EN.pdf"
+                    href="/assets/Documents/GiacomoLisitaCV.pdf"
                     download="GiacomoLisitaCV.pdf"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

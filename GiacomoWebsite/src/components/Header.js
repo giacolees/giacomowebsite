@@ -8,14 +8,13 @@ import { motion } from 'framer-motion';
 const Nav = styled.nav`
   background: #FFFFFA;
   color: #121212;
-  padding: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   top: 0;
-  max-height: 5rem;
+  height: 10%;
   overflow-x: hidden;
   position: ${({ fixed }) => (fixed ? 'fixed' : 'relative')};
 `;
@@ -73,14 +72,14 @@ const Header = () => {
             <LogoSVG />
         </Logo>
         <NavList>
-            <NavItem
+            {/*<NavItem
                 href="/"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={() => handleNavigation()}
                 >
-            Works
             </NavItem>
+            Works*/}
             <NavItem
                 href="/about"
                 whileHover={{ scale: 1.1 }}
