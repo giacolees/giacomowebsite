@@ -65,7 +65,7 @@ const Header = () => {
   
   return (
     <Nav fixed = {fixed}>
-        <Logo href="/"
+        <Logo href="/giacomowebsite"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => handleNavigation('/')}>
